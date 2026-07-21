@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    
+    <style>
+
+        /* element selector */
+        div{
+            background-color : red;
+        }
+
+        /* child selectors */
+        div > p{
+            background-color : red;
+        }
+
+        /* Decendent selector */
+        div p{
+            background-color : blue;
+        }
+
+        /* class selector */
+        .red{
+            background-color :red;
+        }
+
+        /* ID selector */
+
+        #green{
+            background-color : green;
+        }
+
+        /* universal selector */
+        *{
+            margin :10;
+            padding :10;
+        }
+
+
+        /* pseudo selector. */
+
+        /* visited links ko color karo */
+        a:visited{
+            color : yellow;
+        }
+
+        /* aisi link jo visited nahi ho */
+        a:link{
+            color : green;                
+        }
+
+        /* click kare to kya ho */
+        a:active{
+            background-color:red;
+        }
+        /* hover kare to kya ho */
+        a:hover{
+            background-color:violet;
+        }
+
+        /* for only first child. */
+        p:first-child{
+            background-color:aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <main class = "one">
+        <p> i am first child</p>
+        <p>i am second child</p>
+    </main>
+
+    <div class = "red">
+        I AM A DIV.
+        <article>
+            <p>Lorem amet eu officia eiusmod aliquip ipsum excepteur ad proident deserunt commodo cupidatat anim. Incididunt commodo eu deserunt exercitation. Aute tempor voluptate anim tempor ea minim laborum enim reprehenderit mollit ipsum anim. Proident non veniam fugiat cillum pariatur aliqua duis laborum reprehenderit incididunt ex est cillum Lorem. Laboris quis commodo ut nisi id nisi cillum fugiat Lorem ea tempor ex. Tempor nostrud aute proident sint est labore sunt officia. Irure sunt ullamco dolore nulla.</p>
+        </article>
+    </div>
+    
+    <div id = "green">
+        hey guys.
+
+        <p>i am a paragraph inside a div</p>
+    </div>
+
+
+    <a href ="https://www.google.com">Go to Google</a>
+    <a href = "https://www.facebook2.com">Go to facebook</a>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
