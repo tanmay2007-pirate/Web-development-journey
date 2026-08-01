@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video 30 (CSS Variables)</title>
+
+    <style>
+
+        :root{
+            --color : blue;
+            --seccolor:rgb(166, 166, 236);
+        }
+
+
+      .nav {
+        background-color: var(--color);
+      }
+      .Container {
+        background-color: var(--seccolor);
+      }
+
+      ul{
+        display:flex;
+      }
+
+      ul li:first-child{
+        --color : pink;
+        background-color :var(--seccolor);
+        
+      }
+      ul li{
+        --color : pink;
+        background-color :var(--color);
+        padding :20px;
+        border : 2px solid var(--color);
+      }
+
+      *{
+        margin:0px;
+        padding:0px;
+        
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="Container">
+      Cillum laborum cupidatat veniam exercitation eiusmod anim non aute magna
+      consequat id. Incididunt id id est cillum aute culpa minim incididunt
+      proident minim ad ullamco cupidatat occaecat. Velit commodo id nostrud
+      exercitation. Commodo sunt eiusmod exercitation irure consectetur mollit
+      sit est est. Duis ididunt ea cillum dolore.
+    </div>
+  </body>
+</html>
