@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video 45 (Transition Property.)</title>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+
+        }
+
+        .container{
+            background-color:bisque;
+            width:50vw;
+            height:40vh;
+
+
+        }
+        .box{
+            background-color:red;
+            width:5vw;
+            height:4vh;
+            
+            /* transition-property: background-color , transform ; 
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.25s; */
+
+            transition: all  3s ease-in-out  0.25s;
+
+
+        }
+
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background:blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box translate">Box</div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video 39 (Css Grid MASTERCLASS )</title>
+
+    <style>
+
+        .container{
+            border:2px solid black;
+            display:grid;
+            width:80vw;
+            /* grid-template-columns:[phela]120px [dusra]100px [t];
+            grid-template-rows:100px 100px 100px; */
+
+            /* grid-template-areas: "nav nav nav"
+                                "side article article"; */
+
+            /* grid-template-columns :1fr 1fr 1fr; */
+            grid-template-columns:repeat(5 ,minmax(100px 1fr));
+            
+        }
+
+        .item{
+            height:55px;
+            border: 2px solid orange;
+            
+        }
+
+        /* .item-4{
+            grid-row:1/2;
+            grid-column:1/2;
+        } */
+ 
+         .item-1{
+            /* grid-row:1/2; */
+            /* or you can do */
+            /* same thing */
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column:dusra/t;
+
+            grid-area :nav;
+        } 
+         
+
+
+        /* .item-2{
+            grid-area:side;
+        }
+        .item-3{
+            grid-area:article;
+        }
+        .item-4{
+            grid-area:footer;
+        } */
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        
+    </div>
+
+
+
+    
+</body>
+</html>
